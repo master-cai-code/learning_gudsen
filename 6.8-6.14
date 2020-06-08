@@ -1,0 +1,15 @@
+## 2020
+### ----6.8
+  1. VO、DTO、PO
+     vo：页面数据(前端传给后端，后端传给前端的数据，封装成对象) /// 参数校验@Validated  @NotNull等
+     dto：数据传输对象，前端传给服务层，服务层按需要 封装???
+     po: 一个对象对应数据库的一张表
+     
+   2. 利用git提交项目（success）
+     2.1 到想打开的文件位置，右键git bash here，
+     2.2 git clone 地址 ，把远程项目克隆到当前文件位置
+     2.3 用IDEA 选择打开文件
+     2.4 进行编写
+     2.5 代码完成后，右键项目 "Git" ==>"Add" ==> "Commit Directory" 选择被修改或添加的代码（只能是src或pom等配置文件，.gradle等带"."的
+     文件，以及编译等到的文件"target"不要提交），填写提交记录信息 ==> "Repository" ==> "Push"=====>
+                          Push successful: Pushed 1 commit to origin/master
