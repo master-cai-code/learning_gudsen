@@ -12,4 +12,7 @@
      2.4 进行编写
      2.5 代码完成后，右键项目 "Git" ==>"Add" ==> "Commit Directory" 选择被修改或添加的代码（只能是src或pom等配置文件，.gradle等带"."的
      文件，以及编译等到的文件"target"不要提交），填写提交记录信息 ==> "Repository" ==> "Push"=====>
-                          Push successful: Pushed 1 commit to origin/master
+                      最终:   Push successful: Pushed 1 commit to origin/master
+                          
+     过程命令： 远程仓库(clone) ------> 本地仓库(checkout)----->工作区
+               [IDEA] 工作区(add)-------->暂存区(commit) ----->本地仓库(push)----->远程仓库(✔✔) 
