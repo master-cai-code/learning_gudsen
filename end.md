@@ -25,13 +25,22 @@
           此版本号就是create_version??
 
 
-
-
-
-
-
-
-
+## 8.19
+### 1.Spring 事务
+     隔离级别：(5个) 默认、读未提交、读已提交、可重复读、串行化
+     传播级别：(7个) required：没事务，创建事务；有事务 加入此事务
+                   requires_new:没事务，创建事务；有事务,挂起当前事务,自己新建事务
+                   supports:没事务，以非事务执行；有事务，加入事务
+                   not_supported:始终以非事务执行，有事务则挂起当前事务
+                   mandatory：当前没事务就抛异常
+                   never：始终以非事务执行，有事务就抛异常
+                   nested：嵌套事务
+                   
+### 2. 编程式事务和声明式事务：
+         基于 TransactionDefinition、PlatformTransactionManager、TransactionStatus 编程式事务管理是 Spring 提供的最原始的方式;
+                       基于 TransactionTemplate 的编程式事务管理是对上一种方式的封装，使得编码更简单、清晰。
+         基于 @Transactional 的方式将声明式事务管理简化到了极致
+     
 
 
 
